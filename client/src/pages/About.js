@@ -13,7 +13,7 @@ const About = () => {
             <Card style={{background: `${MAX_BLUE_OPAQUE}`, border: 'none', padding: '1em', margin: '1em'}}>
               <h1 style={{color: `${MAX_DARK}`, fontWeight: 'bold'}}>About Me</h1>
               <h5 style={{color: `${MAX_DARK}`}}>
-                Hi everyone! I'm Max Manayan.
+                Hi, I'm Max Manayan!
               </h5>
               <h5 style={{color: `${MAX_DARK}`}}>
                 I am a full-stack engineer with a passion for building applications
