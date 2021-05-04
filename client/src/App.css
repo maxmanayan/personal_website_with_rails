@@ -48,19 +48,20 @@
 
 
 .app-background {
-  background: #EFEFEF;
-  display: flex;
-  justify-content: center;
-}
-
-.page-background {
-  background-image: url(./images/home.jpeg);
+  /* background: #EFEFEF;
+   */
+   background-image: url(./images/home.jpeg);
   background-color: #efefefc2;
   background-blend-mode:soft-light;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.page-background {
 
   width: 1440px;
   min-height: 100vh;
