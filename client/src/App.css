@@ -66,3 +66,11 @@
   width: 1440px;
   min-height: 100vh;
 }
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: #628EAC;
+}
