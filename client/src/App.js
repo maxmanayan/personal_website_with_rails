@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app-background">
       <div className="page-background">
-        <NavBar />
+        <NavBar/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
