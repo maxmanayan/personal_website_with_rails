@@ -1,9 +1,22 @@
+import { Col, Container, Row } from "react-bootstrap"
+import ContactForm from "../components/ContactForm"
 
 
 const Connect = () => {
   return(
     <>
-      <h1>Connect</h1>
+    <Container>
+      <Row>
+        <Col>
+          <h1>Connect</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <ContactForm />
+        </Col>
+      </Row>
+    </Container>
     </>
   )
 }
