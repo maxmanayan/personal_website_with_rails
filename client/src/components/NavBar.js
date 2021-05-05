@@ -1,7 +1,5 @@
 import { Nav, Navbar } from "react-bootstrap";
 import { MAX_BLUE, MAX_DARK, MAX_WHITE } from "../colors";
-import * as Scroll from "react-scroll";
-import { Link }from "react-scroll"
 
 const NavBar = () => {
   return(
