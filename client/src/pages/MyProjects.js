@@ -5,7 +5,7 @@ import { CONTENT_BACKGROUND_GRAY, MAX_BLUE } from "../colors";
 
 const MyProjects = () => {
   return(
-    <>
+    <div id="portfolio">
       <Container>
         <Row>
           <Col xs={12} md={{span: 6, offset: 6}} >
@@ -41,7 +41,7 @@ const MyProjects = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   )
 }
 

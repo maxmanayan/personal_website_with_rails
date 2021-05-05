@@ -7,7 +7,7 @@ import { MAX_BLUE, MAX_DARK } from "../colors"
 
 const Home = () => {
   return(
-    <div >
+    <div id="home" >
       <Container>
         <Row style={{paddingTop: '2em'}}>
           <Col xs={12} md={{span: 6, offset: 5}}>
