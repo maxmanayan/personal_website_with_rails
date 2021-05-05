@@ -1,7 +1,6 @@
 
 import { Route, Switch } from 'react-router';
 import './App.css';
-import { MAX_WHITE } from './colors';
 import NavBar from './components/NavBar';
 import About from './pages/About';
 import Connect from './pages/Connect';

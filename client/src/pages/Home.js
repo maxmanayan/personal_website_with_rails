@@ -1,15 +1,14 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-import { CONTENT_BACKGROUND_GRAY, MAX_BLUE, MAX_DARK, MAX_WHITE } from "../colors"
-import { HOMEPAGE_BUTTON } from "../styles"
+import { MAX_BLUE, MAX_DARK } from "../colors"
 
 
 
 const Home = () => {
   return(
-    <div style={{ height: '90vh', padding: '1em'}}>
-      <Container >
+    <div id="home" >
+      <Container>
         <Row style={{paddingTop: '2em'}}>
           <Col xs={12} md={{span: 6, offset: 5}}>
             <h1 style={{color:`${MAX_BLUE}`, fontSize: '10vw', fontWeight: 'bold'}}>Max Manayan</h1>

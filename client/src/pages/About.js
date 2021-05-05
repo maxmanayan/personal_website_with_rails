@@ -1,5 +1,4 @@
 import { Card, Col, Container, Image, Row } from "react-bootstrap"
-import { Link } from "react-router-dom"
 import { MAX_BLUE, MAX_BLUE_OPAQUE, MAX_DARK } from "../colors"
 import linkedInLogo from "../images/LI-Logo.png"
 import githubLogo from "../images/GitHub_Logo.png"
@@ -24,10 +23,10 @@ const About = () => {
             {/* </Card> */}
             {/* <Card style={{background: 'none', border: 'none', display:'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', padding: '1em', margin: '1em'}}> */}
             <div style={{display:'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', flexWrap: 'wrap', padding: '1em', margin: '1em'}}>
-              <a target="_blank" href="https://www.linkedin.com/in/maxmanayan/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/maxmanayan/">
                 <Image style={{width: '10em', filter: 'brightness(10em) opacity(90%)', margin: '1em'}} src={linkedInLogo} />
               </a>
-              <a target="_blank" href="https://github.com/maxmanayan">
+              <a target="_blank" rel="noreferrer" href="https://github.com/maxmanayan">
                 <Image style={{width: '10em', filter: 'brightness(50%) opacity(90%)', margin: '1em'}} src={githubLogo} />
               </a>
             </div>

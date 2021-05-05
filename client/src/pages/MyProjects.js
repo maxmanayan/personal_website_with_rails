@@ -1,11 +1,11 @@
-import { Card, Col, Container, Image, Jumbotron, Row } from "react-bootstrap";
+import { Col, Container, Image, Jumbotron, Row } from "react-bootstrap";
 import hackathonGrader from "../images/Hackathon_Grader.png"
 import githubLogo from "../images/GitHub-Mark-120px-plus.png"
-import { CONTENT_BACKGROUND_GRAY, MAX_BLUE, MAX_WHITE } from "../colors";
+import { CONTENT_BACKGROUND_GRAY, MAX_BLUE } from "../colors";
 
 const MyProjects = () => {
   return(
-    <>
+    <div id="portfolio">
       <Container>
         <Row>
           <Col xs={12} md={{span: 6, offset: 6}} >
@@ -23,10 +23,10 @@ const MyProjects = () => {
                     }}/>
                 </div>
                 <div style={{margin: '1em', display: 'flex'}}>
-                  <a className='link' target='_blank' href='https://dpl-hackathon-grader.herokuapp.com/'>
+                  <a className='link' target='_blank' rel="noreferrer" href='https://dpl-hackathon-grader.herokuapp.com/'>
                     <h3 style={{marginRight: '2em'}}>Hackathon Grader</h3>
                   </a>
-                  <a target='_blank' href='https://github.com/Matt8728/hackathon_grader'>
+                  <a target='_blank' rel="noreferrer" href='https://github.com/Matt8728/hackathon_grader'>
                     <Image src={githubLogo} style={{height: '2em'}} />
                   </a>
                 </div>
@@ -41,7 +41,7 @@ const MyProjects = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   )
 }
 

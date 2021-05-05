@@ -1,13 +1,14 @@
-import { Nav, Navbar } from "react-bootstrap"
-import { MAX_BLUE, MAX_DARK, MAX_WHITE } from "../colors"
+import { Nav, Navbar } from "react-bootstrap";
+import { MAX_BLUE, MAX_DARK, MAX_WHITE } from "../colors";
 
 const NavBar = () => {
   return(
     <>
-      <Navbar sticky="top" collapseOnSelect expand="lg" style={{background: `${MAX_DARK}`}}>
+      <Navbar sticky="top" collapseOnSelect expand="lg" variant='dark' style={{background: `${MAX_DARK}`}}>
         <Navbar.Brand href="/" style={{color: `${MAX_BLUE}`, fontWeight: 'bold'}}>Home</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" style={{color: `${MAX_WHITE}`}}>
+
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"  style={{color: `${MAX_WHITE}`}} />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
           </Nav>
           <Nav>
