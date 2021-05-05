@@ -1,9 +1,12 @@
 import emailjs from 'emailjs-com';
+import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { MAX_BLUE } from '../colors';
+import { MAX_BLUE, MAX_BLUE_OPAQUE } from '../colors';
 
 
 const ContactForm = () => {
+
+  const [emailSent, setEmailSent] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -16,6 +19,7 @@ const ContactForm = () => {
       });
 
     e.target.reset()
+    setEmailSent(true)
   }
 
   return(
@@ -39,6 +43,11 @@ const ContactForm = () => {
           </Button>
         </div>
       </Form>
+      {emailSent && 
+        <div style={{display: 'flex', justifyContent: 'center', marginTop: '1em'}}>
+          <h5 style={{color: `${MAX_BLUE}`}} >Email Sent!</h5>
+        </div>
+      }
     </>
   )
 }
